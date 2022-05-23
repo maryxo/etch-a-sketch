@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-color: #242424;
+  --light-color: #ededed;
+  --lighter-color: #f7f4f4;
+  /*for the grid container*/
+  --size: 4;
+}
+
+body {
+  background-color: var(--dark-color);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 100px;
+}
+
+/* Title */
+
+.title {
+  font-size: 80px;
+  line-height: 1;
+  color: var(--light-color);
+  padding: 30px 0;
+}
+
+/* Header */
+
+header {
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* Main */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-left: 12rem;
+}
+
+/* Buttons and inputs */
+
+button,
+input {
+  width: 15%;
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--light-color);
+  border: 1px solid var(--lighter-color);
+  cursor: pointer;
+}
+
+button {
+  background-color: var(--dark-color);
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+input[type="color"] {
+  -webkit-appearance: none;
+  width: 15%;
+  height: 60px;
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border: var(--dark-color);
+}
+
+#rainbow {
+  background: url(medias/rainbow-background-1438899140wt8.jpg);
+  color: #000;
+}
+
+.value {
+  color: var(--light-color);
+  font-weight: 600;
+  font-size: 25px;
+  margin-left: 33%;
+  margin-bottom: 5%;
+  margin-top: -3%;
+}
+
+#resize {
+  -webkit-appearance: none;
+  margin-left: 35.5%;
+  margin-top: 5%;
+  width: 31.8%;
+  height: 35px;
+  background: var(--dark-color);
+  outline: none;
+  border-radius: 2px;
+}
+
+#resize::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 35px;
+  background: var(--light-color);
+  cursor: pointer;
+}
+
+/* Effects and animations*/
+
+button,
+input[type="color"] {
+  -webkit-box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.43);
+  box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.43);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Grid container */
+
+.gridContainer {
+  display: grid;
+  width: 520px;
+  height: 480px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 33%;
+  margin-top: -40%;
+}
+
+.box {
+  background-color: var(--lighter-color);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  color: var(--light-color);
+  margin-bottom: -10%;
+  margin-top: 5%;
+}
